@@ -1,6 +1,6 @@
 # Jar Explorer Documentation
 
-This repository provides documentation on how to inspect and extract the contents of JAR files, and how to decompile `.class` files using JD-GUI.
+This repository provides documentation on how to inspect, extract, and decompile Java JAR files.
 
 ---
 
@@ -18,11 +18,12 @@ You can extract the contents of a JAR file using the `unzip` command:
 
 ```bash
 unzip myfile.jar -d output_folder
+```
 
 - `myfile.jar` – the JAR file you want to extract  
 - `output_folder` – the directory where files will be extracted
 
-After extraction, you will see the folder structure of the JAR, including any `.class` files, resources, and `META-INF` directory.
+After extraction, you will see the folder structure of the JAR, including any `.class` files, resources, and the `META-INF` directory.
 
 ---
 
@@ -33,8 +34,9 @@ To view the Java source code from compiled `.class` files, you can use [JD-GUI](
 1. Download and install JD-GUI.
 2. Open your JAR file:
 
+```bash
 jdgui classes.jar
-
+```
 
 3. Browse the packages and classes, and optionally export the source code.
 
@@ -51,4 +53,3 @@ jdgui classes.jar
 
 - [JD-GUI Official Website](https://java-decompiler.github.io/)  
 - [Java .jar file documentation](https://docs.oracle.com/javase/tutorial/deployment/jar/)  
-
